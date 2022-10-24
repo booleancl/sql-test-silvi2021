@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS sizes;
 
 CREATE TABLE sizes(
   id INT,
-  name VARCHAR(15),
+  name VARCHAR(50),
   created_at TIMESTAMP,
   updated_at TIMESTAMP,
 

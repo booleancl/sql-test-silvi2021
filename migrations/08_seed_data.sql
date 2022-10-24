@@ -3,10 +3,20 @@
 
 \c pizzas_factory
 
-\COPY addresses FROM 'ruta/al/archivo/data/addresses.csv' CSV HEADER
-\COPY customers FROM 'ruta/al/archivo/data/customers.csv' CSV HEADER
-\COPY prices FROM 'ruta/al/archivo/data/prices.csv' CSV HEADER
-\COPY pizzas FROM 'ruta/al/archivo/data/pizzas.csv' CSV HEADER
-\COPY sizes FROM 'ruta/al/archivo/data/sizes.csv' CSV HEADER
-\COPY details FROM 'ruta/al/archivo/data/orders_details.csv' CSV HEADER
-\COPY orders FROM 'ruta/al/archivo/data/orders.csv' CSV HEADER
+\COPY customers FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/customers.csv' CSV HEADER;
+\COPY pizzas FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/pizzas.csv' CSV HEADER;
+\COPY sizes FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/sizes.csv' CSV HEADER;
+
+\COPY orders FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/orders.csv' CSV HEADER;
+\COPY addresses FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/addresses.csv' CSV HEADER;
+
+
+
+
+
+
+
+
+\COPY prices FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/prices.csv' CSV HEADER;
+
+\COPY details FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/orders_details.csv' CSV HEADER;

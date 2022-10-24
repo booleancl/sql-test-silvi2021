@@ -8,4 +8,4 @@ CREATE TABLE pizzas(
   updated_at TIMESTAMP,
 
   PRIMARY KEY(id)
-)
+);

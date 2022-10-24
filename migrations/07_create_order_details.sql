@@ -5,16 +5,16 @@
 DROP TABLE IF EXISTS details;
 CREATE TABLE details(
   id INT,
-  -- completar
-  -- completar
-  -- completar
-  -- completar
+  order_id INT,
+  pizza_id INT,  
+  size_id INT,
+  quantity INT,
   unit_price INT,
   created_at TIMESTAMP,
   updated_at TIMESTAMP,
 
   PRIMARY KEY(id),
-  FOREIGN KEY -- completar
-  FOREIGN KEY-- completar,
-  FOREIGN KEY-- completar
+  FOREIGN KEY(order_id) REFERENCES orders(id),
+  FOREIGN KEY(size_id) REFERENCES sizes(id),
+  FOREIGN KEY(pizza_id) REFERENCES pizzas(id)
 );

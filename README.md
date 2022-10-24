@@ -25,19 +25,50 @@ Respalde su respuesta con un archivo sql por cada pregunta.
 
 > 1. ¿Cuál es el valor de la pizza más cara?
 
-Respuesta: 
+Respuesta: LA MAS CARA A 11600
+
+\c pizzas_factory
+
+SELECT value FROM prices ORDER BY value DESC LIMIT 1
+
 
 > 2. ¿Cuál es el nombre de la pizza más vendida(unidades total)?
 
-Respuesta:
+Respuesta:DELUXE CON 121 Y ROMANA 121
+
+\c pizzas_factory
+
+SELECT pizzas.name as pizza, sum(quantity) as total_quantity
+FROM details
+JOIN pizzas ON pizzas.id = details.pizza_id
+GROUP BY pizza
+ORDER BY total_quantity DESC;
 
 > 3. ¿Cuál es el nombre de la pizza más vendida(ingresos totales)?
 
-Respuesta:
+Respuesta: DELUXE 1057600
+
+\c pizzas_factory
+
+SELECT pizzas.name as pizza, sum(quantity*unit_price) as total_quantity
+FROM details
+JOIN pizzas ON pizzas.id = details.pizza_id
+JOIN sizes ON sizes.id = details.size_id
+GROUP BY pizza
+ORDER BY total_quantity DESC;
 
 > 4. Cuál es el tamaño de pizza más vendido?
 
-Respuesta:
+Respuesta: LA FAMILIAR
+
+\c pizzas_factory
+
+SELECT sizes.name as sizes, sum(quantity) as total_quantity
+FROM details
+JOIN sizes ON sizes.id = details.size_id
+GROUP BY sizes
+ORDER BY total_quantity DESC;
+
 
 > 5. ¿Cuál es el cliente con la compra más grande?
 
