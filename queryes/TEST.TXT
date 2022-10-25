@@ -48,3 +48,7 @@ C:/Users/villa/intro_dev/sql-test-silvi2021/queryes/06_total_income.sql
 C:/Users/villa/intro_dev/sql-test-silvi2021/queryes/05_best_customer.sql
 
 C:/Users/villa/intro_dev/sql-test-silvi2021/queryes/05_best_customer.sql
+
+C:/Users/villa/intro_dev/sql-test-silvi2021/queryes/05_best_customer.sql
+C:/Users/villa/intro_dev/sql-test-silvi2021/queryes/06_total_income.sql
+

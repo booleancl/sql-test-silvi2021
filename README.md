@@ -72,9 +72,27 @@ ORDER BY total_quantity DESC;
 
 > 5. ¿Cuál es el cliente con la compra más grande?
 
-Respuesta
+Respuesta Cary Paucek
+
+\c pizzas_factory
+
+
+SELECT name, order_id, sum(unit_price*quantity) AS total
+FROM customers
+JOIN orders ON customers.id = orders.customer_id
+JOIN details ON orders.id = order_id
+GROUP BY name, order_id
+ORDER BY total DESC limit 1;
+
+
 
 > 6. ¿Cuánto fueron los ingresos totales de la pizzería?
 
-Respuesta
+Respuesta 2044400
+
+\c pizzas_factory
+
+SELECT sum(unit_price) AS total_ingresos
+FROM details;
+
 

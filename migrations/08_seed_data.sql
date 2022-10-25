@@ -6,16 +6,8 @@
 \COPY customers FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/customers.csv' CSV HEADER;
 \COPY pizzas FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/pizzas.csv' CSV HEADER;
 \COPY sizes FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/sizes.csv' CSV HEADER;
-
 \COPY orders FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/orders.csv' CSV HEADER;
 \COPY addresses FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/addresses.csv' CSV HEADER;
-
-
-
-
-
-
-
 
 \COPY prices FROM 'C:/Users/villa/intro_dev/sql-test-silvi2021/data/prices.csv' CSV HEADER;
 

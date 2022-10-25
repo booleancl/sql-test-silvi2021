@@ -1,7 +1,9 @@
 \c pizzas_factory
 
 
-SELECT unit_price FROM details
-JOIN details ON orders(id), customers(id) = details.unit_price_id
-ORDER BY unit_price DESC LIMIT 1
-
+SELECT name, order_id, sum(unit_price*quantity) AS total
+FROM customers
+JOIN orders ON customers.id = orders.customer_id
+JOIN details ON orders.id = order_id
+GROUP BY name, order_id
+ORDER BY total DESC limit 1;
